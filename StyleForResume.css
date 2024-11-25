@@ -1,0 +1,739 @@
+/*....body...*/
+body{
+/*	position: fixed;*/
+	margin: 0px;
+    font-family: sans-serif;
+    top: 0;
+    
+}
+/*....header.............*/
+#backgroundpic{
+	position: relative;
+	top: 0;
+	width: 100vw;
+	height: 65vh;
+	background-image: url("dark_green_glare_wavy_lines_black_background_hd_dark_green.jpg");
+	background-size: cover;
+/*	margin: 2px bold  black;*/
+	background-position: center;
+	
+	background-attachment: fixed;
+	text-align: center;
+	word-spacing: 5px;
+
+}
+.navigator-links{
+	padding-top: 2px;
+	word-spacing: 2rem;
+
+}
+.hamburger{
+	/*padding: 0;
+	margin: 0;*/
+	display: inline-block;
+	color: whitesmoke;
+	font-size: 2rem ;
+	position: relative;
+	left: 33%;
+	top: 0%;
+/*	right: 0%;*/
+opacity: 0;
+cursor: pointer;
+
+
+}
+.hamburger ul li{
+/*	position: absolute;*/
+display: flex;
+text-align: center;
+font-size: 1rem;
+	
+	background-color: grey;
+	width: 100px;
+	padding: 10px,15px;
+/*	line-height: 1rem;*/
+	
+
+
+
+}
+.hamburger .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 200px; /* Adjust width as needed */
+    border-radius: 4px;
+}
+
+
+
+
+.submenu{
+	left: 0;
+	position: absolute;
+	z-index: 1;
+	color: whitesmoke;
+}
+
+.hamburger .submenu li {
+    border-bottom: 1px solid #444;
+}
+
+.hamburger .submenu li:last-child {
+    border-bottom: none;
+}
+
+.hamburger .submenu li a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.hamburger:hover .submenu {
+    display: block;
+
+}
+
+
+
+.navigator-links li{
+	display:inline-block;
+	font-size: 1rem;
+
+
+	
+	
+
+}
+#socialapps{
+	word-spacing: 3rem;
+}
+#socialapps li{
+	display:inline-block;
+	font-size: 1.4rem;
+	color: white;
+	position: relative;
+	top: 70px;
+
+}
+nav li a{
+	text-decoration: none;
+/*	letter-spacing: 2px;*/
+	color: white;
+
+
+
+}
+
+nav li a:hover{
+	text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.4);
+	text-decoration: underline;
+	transition-duration: 0.5s;
+}
+
+#main-heading h1{
+	    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    position: relative;
+    	top: 60px;
+    	left: 10px;
+}
+
+
+
+
+/*.........About........*/
+
+#about{
+	height: auto;
+	width: 100%;
+	line-height: 1.5rem;
+}
+.text-center{
+/*	text-align: center;*/
+padding: 0px 50px;
+margin-top: -10%;
+
+}
+#my-pic{
+	position: relative;
+	height: 300px;
+	width: 300px;
+	box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+	top:-200px;
+	align-content: center;
+	left: 40%;
+	border-radius: 50%;
+	margin-bottom: 0;
+
+}
+#my-pic img{
+	height: 300px;
+	width: 300px;
+	background-size: cover;
+	border-radius: 50%;
+	
+}
+
+
+
+/* Section styling */
+#about, #skills, #education, #portfolio, #contact {
+    width: 100%;
+    padding: 50px 10px; /* added padding for spacing */
+    line-height: 1.5rem;
+}
+
+section {
+    width: 100%;
+    height: auto;
+/*    padding: 10px 0; /* added padding for spacing */*/
+    display: flex;
+    flex-direction: column;
+}
+
+section:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+section:nth-child(even) {
+    background-color: lightgrey;
+}
+
+
+
+/*..........education................*/
+#education{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+
+
+}
+#edu-box{
+	width: 75vw;
+	height: auto;
+	/*display: flex;
+	flex-direction: column;*/
+	position: relative;
+	left: 7%;
+
+/*	border: 2px solid black;*/
+}
+.time-box{
+	position:relative;
+    min-height:150px;
+    width:50%;
+    justify-content: end; !important
+/*    border:1px solid black;*/
+    margin:2px;
+    text-align: center;
+
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  	 "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+
+.time-box h4,
+.time-box h5,
+.time-box h3,
+.time-box p {
+    margin: 1px;
+    color: #212529;
+}
+
+
+.time-box:nth-child(even){
+    left:53%;
+}
+.timeline-divider{
+    height:75%;
+    width:0;
+    position:absolute;
+    border:2px dashed grey;
+    top:10%;
+    left:50%;
+}
+
+
+.time-box:nth-child(odd)::after{
+    content:'';
+    position:absolute;
+    top:30%;
+    border-radius:50%;
+    height:0.6rem;
+    width:0.6rem;
+    background-color:#6d6f71;
+    left:99%;
+    z-index:2;
+}
+.time-box:nth-child(even)::after{
+    content:'';
+    position:absolute;
+    top:30%;
+    border-radius:50%;
+    height:0.6rem;
+    width:0.6rem;
+    background-color:#6d6f71;
+    right:105%;
+    z-index:2;
+}
+
+
+
+
+.traveller{
+    position:sticky;
+    top:10%;
+    transform:rotate(90deg);
+/*    font-weight: 200px;*/
+    z-index:3;
+}
+.traveller i{
+	font-size: 30px;
+}
+
+
+
+
+
+
+
+/*.......Skills........................*/
+ .section-headings{
+ 	font-size: 35px;
+ 	color: #6d6f71;
+ 	margin-top: -3%;
+ 	text-align: center;
+ 	padding-top: 0%;
+ 	font-family: Quicksand;
+ }
+
+ .skills-display{
+ 	width:70%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+/*	background-color: lightgreen;*/
+	position: relative;
+/*	margin: 10%;*/
+	margin-left:10%;
+ }
+
+ .skills-bgbox{
+ 	height: 1.9rem;
+	width: 12rem;
+	border:1px;
+	background-color:grey;
+	border-radius: 0.8rem;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	margin: 25px;
+ }
+
+ #percent90{
+	width: 90%;
+	height: inherit;
+	border-left: 40%;
+	border-right: 40%;
+	background-color: #393e46;
+	border-radius: 20px 0px 0px 20px;
+	color: whitesmoke;
+}
+
+#percent70{
+	width: 70%;
+	height: inherit;
+	border-left: 40%;
+	border-right: 40%;
+	background-color: #393e46;
+	border-radius: 20px 0px 0px 20px;
+	color: whitesmoke;
+}
+
+
+#percent85{
+	width: 85%;
+	height: inherit;
+	border-left: 40%;
+	border-right: 40%;
+	background-color: #393e46;
+	border-radius: 20px 0px 0px 20px;
+	color: whitesmoke;
+}
+
+#percent60{
+	width: 60%;
+	height: inherit;
+	border-left: 40%;
+	border-right: 40%;
+	background-color: #393e46;
+	border-radius: 20px 0px 0px 20px;
+	color: whitesmoke;
+}
+
+	
+
+
+
+
+
+/*.............. Exerience.............. */
+#box2{
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+ #experience{
+ 	width:100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	justify-content: center;
+	align-items: center;
+/*	background-color: lightgreen;*/
+	position: relative;
+/*	margin: 10%;*/
+/*	margin-left:17%;*/
+ }
+
+ #exerience-text{
+ 	position: relative;
+ 	left: 20%;
+ 	height: auto;
+ 	width: 500px;
+/* 	background-color: lightblue;*/
+ 	text-align: center;
+ 	margin: 2px bold black;
+
+
+ }
+
+
+ /*#exerience-text::before{
+ 	 content: "";
+    display: block; 
+    height: 200px;
+    width: 200px;
+    background-image: url("ninjaslogo.png");
+    background-size: cover; 
+    background-position: center; 
+ }
+*/
+
+ #ex-logo{
+ 	display: inline-block;
+ 	position: relative;
+	height: 160px;
+	width: 160px;
+	box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+/*	top:-200px;*/
+	align-content: center;
+	left: 0%;
+	border-radius: 50%;
+	margin-bottom: 0;
+
+
+ }
+ #ex-logo img{
+ 	display: inline-block;
+	height: 150px;
+	width: 150px;
+	background-size: cover;
+	border-radius: 50%;*/
+	
+}
+
+
+  #experience-text h4,h3,p{
+  	text-align: center;
+  	font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  	 "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  }
+
+
+
+
+/*..........Portfolio.........................*/
+
+#portfolio{
+	width:100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+#portfolio-bg{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+
+.pbox-1{
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	
+	position: relative;
+	align-content: center;
+	border-radius: 20%;
+}
+
+.pbox-1 img{
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	border-radius: 25%;
+
+}
+.pbox-1:hover{
+	box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.5);
+	transition-duration: 0.5s;
+	project
+}
+
+.pbox-1:hover::after {
+    /* content: ""; */
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%); /* Centers the text */
+    background-color: whitesmoke; /* Optional: Adds a background to make the text more readable */
+    padding: 5px; /* Optional: Adds some padding around the text */
+    border-radius: 3px; /* Optional: Rounds the corners of the background */
+    font-size: 16px; /* Adjust as needed */
+    color: #212529; /* Adjust as needed */
+}
+
+
+/*.....................Media box for tweeking ...................*/
+
+@media screen and (max-width:786px){
+	    #my-pic {
+        left: 28%;
+    }
+
+    #box2 {
+        flex-wrap: wrap;
+        left: 0%;
+        right: 10%;
+    }
+
+/*  education box   */
+
+    .timeline-divider {
+        left: -10%;
+    }
+
+    .time-box:nth-child(even){
+    left:3%;
+}
+
+.time-box:nth-child(odd)::after{
+    content:'';
+    left:-22%;
+    
+}
+
+.time-box:nth-child(even)::after{
+    content:'';
+    right: 124%;
+    
+}
+
+#exerience-text{
+ 	
+ 	left: 2%;
+ 	width: 80%;
+
+ 	text-align: left;
+ 	margin: 2px bold black;
+
+
+ }
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width:572px){
+	    #my-pic {
+        left: 20%;
+    }
+
+    #box2 {
+        flex-wrap: wrap;
+        left: 0%;
+        right: 10%;
+    }
+
+/*  education box   */
+
+    .timeline-divider {
+        left: -10%;
+    }
+
+    .time-box:nth-child(even){
+    left:3%;
+}
+
+.time-box:nth-child(odd)::after{
+    content:'';
+    left:-14%;
+    
+}
+
+.time-box:nth-child(even)::after{
+    content:'';
+    right: 114%;
+    
+}
+
+.time-box{
+	width: 80%;
+}
+
+#exerience-text{
+ 	
+ 	left: 2%;
+ 	width: 80%;
+
+ 	text-align: left;
+ 	margin: 2px bold black;
+
+
+ }
+
+ .navigator-links{
+	opacity: 0;
+
+}
+
+.hamburger{
+
+	opacity: 1;
+
+}
+
+
+
+
+}
+
+
+
+/* ...............Contact............................... */
+#contact{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	background: linear-gradient(90deg,darkgreen,black);
+
+}
+
+#contact-bg{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	position: relative;
+}
+
+
+	.contact-box {
+            width: 300px;
+            margin: 20px auto;
+            padding: 15px;
+/*            border: 1px solid #ccc;*/
+            border-radius: 5px;
+/*            background-color: #f9f9f9;*/
+				color: whitesmoke;
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Input field styling */
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #endingapps{
+        	text-align: center;
+        	color: whitesmoke;
+        	word-spacing: 3rem;
+        	position: relative;
+        	font-size: 2rem;
+
+        }
+        #endingapps li{
+        	display: inline-block;
+        	color: whitesmoke;
+        }
+
+        #fianlpointer{
+        	text-align: center;
+        	color: whitesmoke;
+        	font-size: 2rem;
+        }
+
